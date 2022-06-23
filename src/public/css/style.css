@@ -103,7 +103,7 @@ body {
   .sec-header .title-and-icon {
     height: 100px; }
     .sec-header .title-and-icon i {
-      color: #45c3d2;
+      color: #766e6b;
       font-size: 24px; }
 
 .section-slide {
@@ -238,7 +238,7 @@ footer {
 
 .detail-nav {
   height: 50px;
-  background-color: #45c3d2;
+  background-color: #766e6b;
   padding-top: 10px;
   color: #fff; }
   .detail-nav .menu-type span {
@@ -280,7 +280,7 @@ footer {
       padding-top: 15px;
       margin-bottom: 20px;
       margin-top: -10px;
-      background-color: #45c3d2; }
+      background-color: #766e6b; }
       .detail-content .description .header-booking label {
         padding-left: 15px;
         color: #fff; }
@@ -415,7 +415,7 @@ select#day-book {
   background-color: #ccc; }
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-  background-color: #45c3d2 !important; }
+  background-color: #766e6b !important; }
 
 body {
   margin: 0;
