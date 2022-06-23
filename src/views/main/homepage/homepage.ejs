@@ -2,10 +2,14 @@
 <section class="mt-3">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-2">
-                <div style="margin-bottom: -30px;" class="homepage-logo mt-2">
+            <div class="col-1">
+                <div class="sec-fields-title mx-auto d-flex my-3"></div>
+                    <a style="margin-left: 90%; position:fixed;" href="/all-specializations" class="sec-fields-title d-flex flex-grow-1"><span>Book Now!</span></a>
+                </div>
+                <div class="homepage-logo mt-4">
                     <!-- <img class="menu-nav" src="../images/background/menu-nav.png" alt="img logo"> -->
-                    <h5>Photo Session Scheduling</h5>
+                    <h5 style="margin-top: 4%;">Photo Session Scheduling</h5>
+                    
                 </div>
                 <div class="home-nav">
                     <div class="nav-item">
@@ -35,7 +39,7 @@
         </div>
     </div>
     <div class="content-header d-flex  justify-content-between title-and-icon align-items-center">
-        <div class="d-flex flex-column ml-5 pl-5 align-items-center">
+        <div style="margin-left: 300px;" class="d-flex flex-column pl-5 align-items-center">
             <i class="fa fa-thumbs-up"></i>
             <span>Good reviews</span>
         </div>
@@ -43,7 +47,7 @@
             <i class="fa fa-user-md"></i>
             <span>Out standing photographers</span>
         </div>
-        <div class="d-flex flex-column mr-5 pr-5 align-items-center">
+        <div style="margin-right: 300px;" class="d-flex flex-column pr-5 align-items-center">
             <i class="fa fa-clock-o"></i>
             <span>Fast response</span>
         </div>
@@ -57,13 +61,13 @@
     <div class="section-slide">
         <div class="slider slider-nav text-decoration-none">
             <% specializations.forEach(function(x) { %>
-                <a href="/detail/specialization/<%= x.id %>" class="a-specialization text-decoration-none"
-                   style="outline: none">
+                <!-- <a href="/detail/specialization/<%= x.id %>" class="a-specialization text-decoration-none"
+                   style="outline: none"> -->
                     <div class="d-flex flex-column slide-fields specialization" data-specialization="<%= x.id %>">
                         <img src="/images/placeholder-image.png" alt="image bla bla">
                         <h3 class="text-decoration-none"><%= x.name %></h3>
                     </div>
-                </a>
+                <!-- </a> -->
             <% }) %>
         </div>
     </div>
