@@ -1,14 +1,14 @@
 <% extend("master.ejs") %>
 <!-- Page Heading -->
 <div class="d-sm-flex align-items-center justify-content-between mb-4">
-    <h1 class="h3 mb-0 text-gray-800">List of appointment appointments</h1>
+    <h1 class="h3 mb-0 text-gray-800">List of scheduled sessions</h1>
 
 </div>
 
 <!-- Content Row -->
 <div class="card shadow mb-4">
     <div class="card-header py-3">
-        <h6 class="m-0 font-weight-bold text-primary">List of appointment appointments</h6>
+        <h6 class="m-0 font-weight-bold text-primary">List of scheduled sessions</h6>
         <div class="my-3">
             <label for="dateDoctorAppointment">Time: </label>
             <form method="GET" action="/doctor/manage/appointment">
@@ -352,7 +352,7 @@
     <div class="modal-dialog mw-100 w-75" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Patient information</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Client information</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -398,7 +398,7 @@
                     </div>
 
                     <div class="form-group col-6">
-                        <label class="col-form-label text-label" for="patientMoreInfo">Information on previous exams:</label>
+                        <label class="col-form-label text-label" for="patientMoreInfo">Information on previous sessions:</label>
                         <textarea class="form-control" name="patientMoreInfo" id="patientMoreInfo"></textarea>
                     </div>
 
@@ -407,7 +407,7 @@
                         <textarea class="form-control" name="patientNote" id="patientNote"></textarea>
                     </div>
                     <div class="col-12">
-                        <div class="col-form-label text-label">Photo of previous examination:</div>
+                        <div class="col-form-label text-label">Photo of previous sessions:</div>
                         <div id="imageOldForms">
 
                         </div>

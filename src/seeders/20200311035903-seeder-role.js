@@ -8,7 +8,7 @@ module.exports = {
             createdAt: new Date(),
             updatedAt: new Date()
         }, {
-            name: 'DOCTOR',
+            name: 'PHOTOGRAPHER',
             createdAt: new Date(),
             updatedAt: new Date()
         }, {

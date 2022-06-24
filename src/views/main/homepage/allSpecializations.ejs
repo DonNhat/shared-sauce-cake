@@ -7,7 +7,7 @@
                     <div class="menu-title text-decoration-none">
                         <a href="/" class="text-decoration-none">
                             <img style="margin-top: -2%;" class="menu-nav" src="/images/icon-for-photo.jpg" alt="img logo">
-                            <span class="text-decoration-none ml-1">Photo Session</span>
+                            <span class="text-decoration-none ml-1">PSS</span>
                         </a>
                     </div>
                 </div>
@@ -46,19 +46,19 @@
                     <h2>Package type of Photography</h2>
                     <hr>
                     <div>
-                        Photo Session Scheduling is pleased to partner with varity photographers and professional studios. List of active package types available:
+                        Photo Session Scheduling is pleased to partner with a wide variety of photographers and professional studios. List of active package types available:
 
                     </div>
                     <hr>
                     <div class="d-flex flex-row flex-wrap">
-                    <% specializations.forEach(function(specification) { %>
+                    <% specializations.forEach(function(specification){%>
                         <div class="col-6 my-4">
-                            <!-- <a href="/detail/specialization/<%= specification.id %>" class="text-decoration-none" style="outline: none"> -->
+                            <a href="/detail/specialization/<%= specification.id %>" class="text-decoration-none" style="outline: none">
                                 <div class="d-flex flex-column" title="<%= specification.name%>">
-                                    <img style="height: 200px; width: 300px" src="/images/placeholder-image.png" alt="image bla bla">
+                                    <img style="height: 200px; width: 300px" src="/images/specializations/<%= specification.image %>" alt="image bla bla">
                                     <h3 class="mt-3" style="font-size: 18px"><%= specification.name %></h3>
                                 </div>
-                            <!-- </a> -->
+                            </a>
                         </div>
                     <% }) %>
                 </div>
