@@ -3,21 +3,17 @@
     <div class="container">
         <div class="container">
             <div class="row">
-                <div class="col-2">
+                <div class="col-3">
                     <div class="menu-title text-decoration-none">
                         <a href="/" class="text-decoration-none">
-                            <img class="menu-nav" src="/images/background/smile.png" alt="img logo">
-                            <span class="text-decoration-none">Doctors care</span>
+                            <span class="text-decoration-none">Photo Booking Session</span>
                         </a>
                     </div>
                 </div>
                 <div class="col-8 d-flex flex-row justify-content-center align-self-center menu-type">
                     <span class="d-block"><a href="/" class="text-decoration-none">Homepage</a></span>
-                    <span class="d-block mx-5"><a href="/for-patients" class="text-decoration-none">For patients</a></span>
-                    <span class="d-block"><a href="/for-doctors" class="text-decoration-none">For doctors</a></span>
-                </div>
-                <div class="col-2 d-flex justify-content-center align-items-center">
-                    <span><a href=" https://www.youtube.com/channel/UCHqJxLo7mKam9GKqqwr2wfA?sub_confirmation=1" target="_blank" class="text-decoration-none">Need support?</a></span>
+                    <span class="d-block mx-5"><a href="/for-patients" class="text-decoration-none">For Customer</a></span>
+                    <span class="d-block"><a href="/for-doctors" class="text-decoration-none">For Photographer</a></span>
                 </div>
             </div>
         </div>
@@ -28,17 +24,18 @@
     <div class="container">
         <div class="container">
             <div class="row">
-                <div class="col-2">
-                    <img src="/images/users/<%= doctor.avatar %>" class="avatar-doctor" alt="doctor avatar">
-                </div>
+                <!-- <div class="col-2 mt-3">
+                    <img class="avatar-doctor-modal" src="/images/users/<%= doctor.avatar %>">
+                </div> -->
+                
                 <div class="col-9 info-doctor">
                     <div><span class="name-doctor"><%= doctor.name %></span></div>
                     <div>Specialist: <span><%= specialization.name %></span></div>
                     <div class="mt-2">
-                        <a href="/feedback/<%=doctor.id%>" class="btn-feedback text-decoration-none">Send comments after going to the doctor</a>
+                        <a href="/feedback/<%=doctor.id%>" class="btn-feedback text-decoration-none">Send comments after meet with the Photographer</a>
                     </div>
                 </div>
-
+                
             </div>
         </div>
     </div>
@@ -56,13 +53,13 @@
                     <div>
                         <br>
                         <% if( doctor.Comments.length > 0){%>
-                            <div class="title-feedback">Patients response:</div>
+                            <div class="title-feedback">Customers response:</div>
 
                             <% doctor.Comments.forEach(function(cmt) { %>
                                 <div class="comment mt-3 d-flex flex-column">
                                     <div class="d-flex flex-row">
                                         <div><strong><%= cmt.name%></strong></div>
-                                        <div  class="ml-3 " style="color: #0056b3">(Date and time of examination) <%= cmt.dateBooking%> - <%=cmt.timeBooking%></div>
+                                        <div  class="ml-3 " style="color: #0056b3">(Date and time of appointment) <%= cmt.dateBooking%> - <%=cmt.timeBooking%></div>
                                     </div>
                                     <div>
                                         <span><%= cmt.content %></span>
@@ -78,7 +75,7 @@
                     <div class="d-flex flex-column h-100">
                         <div class="doctor-text-book">
                             <div class="row header-booking">
-                                <label for="day-book" class="label-booking">SCHEDULE EXAMINATION</label>
+                                <label for="day-book" class="label-booking">SCHEDULE APPOINTMENT</label>
                             </div>
                             <select id="day-book" class="form-control" data-doctor="<%= doctor.id %>">
                                 <% sevenDaySchedule.forEach(function(day) { %>
@@ -91,8 +88,8 @@
                              class="doctor-schedule d-flex flex-row  flex-wrap text-decoration-none">
                             <% if(doctor.Schedules.length === 0){ %>
                                 <div>
-                                    Doctor "<%= doctor.name %>" does not have an appointment on
-                                    <b><%= sevenDaySchedule[0] %></b>. Please select the next examination schedule.
+                                    Photographer "<%= doctor.name %>" does not have an appointment on
+                                    <b><%= sevenDaySchedule[0] %></b>. Please select the next appointment schedule.
                                 </div>
                             <% } %>
                                 <% doctor.Schedules.forEach( function(x, index) { %>
@@ -118,13 +115,10 @@
                         <div id="div-more-info">
                             <% if(doctor.Schedules.length > 0){ %>
                                 <div class="d-flex flex-column">
-                                    <div>
-                                                <span class="d-block mt-2"> Choose <i class="fa fa-hand-o-up" aria-hidden="true"></i>  and book a free consultation</span>
-                                    </div>
                                     <div style="border-top: 1px solid #ccc"
                                          class="d-flex flex-column">
                                                             <span class="d-block pt-3 pb-1"
-                                                                  style="text-transform: uppercase">Medical address:</span>
+                                                                  style="text-transform: uppercase">Address:</span>
                                         <span class="d-block pb-1"
                                               style="border-bottom: 1px solid #ccc"><%= doctor.address %></span>
                                     </div>
@@ -134,7 +128,7 @@
                         </div>
                     </div>
                     <div class="clinic-address">
-                        Medical address:
+                        Address:
                     </div>
                     <div id="myMap" class="bing-map">
                     </div>
@@ -162,7 +156,7 @@
                          data-doctor-id="<%= doctor.id %>">
                         <label class="text-label" style="padding-top: 7px">Doctor information:</label>
                         <div class="d-flex flex-row">
-                            <img class="avatar-doctor-modal" src="/images/users/<%= doctor.avatar %>">
+                            <!-- <img class="avatar-doctor-modal" src="/images/users/<%= doctor.avatar %>"> -->
                             <div class="ml-3">
                                 <span class="d-block"><%= doctor.name %></span>
                                 <div class="time-booking" id="time-patient-booking"></div>
