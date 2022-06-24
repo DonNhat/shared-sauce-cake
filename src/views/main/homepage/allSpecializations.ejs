@@ -53,12 +53,12 @@
                     <div class="d-flex flex-row flex-wrap">
                     <% specializations.forEach(function(specification) { %>
                         <div class="col-6 my-4">
-                            <!-- <a href="/detail/specialization/<%= specification.id %>" class="text-decoration-none" style="outline: none"> -->
+                            <a href="/detail/specialization/<%= specification.id %>" class="text-decoration-none" style="outline: none">
                                 <div class="d-flex flex-column" title="<%= specification.name%>">
                                     <img style="height: 200px; width: 300px" src="/images/placeholder-image.png" alt="image bla bla">
                                     <h3 class="mt-3" style="font-size: 18px"><%= specification.name %></h3>
                                 </div>
-                            <!-- </a> -->
+                            </a>
                         </div>
                     <% }) %>
                 </div>
