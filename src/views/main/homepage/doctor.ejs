@@ -29,7 +29,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-2">
-                    <img src="/images/users/<%= doctor.avatar %>" class="avatar-doctor" alt="doctor avatar">
+                    <!-- <img src="/images/users/<%= doctor.avatar %>" class="avatar-doctor" alt="doctor avatar"> -->
+                    <img src="/images/placeholder-image.png" class="avatar-doctor" alt="photographer avatar">
                 </div>
                 <div class="col-9 info-doctor">
                     <div><span class="name-doctor"><%= doctor.name %></span></div>
@@ -162,7 +163,8 @@
                          data-doctor-id="<%= doctor.id %>">
                         <label class="text-label" style="padding-top: 7px">Doctor information:</label>
                         <div class="d-flex flex-row">
-                            <img class="avatar-doctor-modal" src="/images/users/<%= doctor.avatar %>">
+                            <!-- <img class="avatar-doctor-modal" src="/images/users/<%= doctor.avatar %>"> -->
+                            <img class="avatar-doctor-modal" src="/images/placeholder-image.png">
                             <div class="ml-3">
                                 <span class="d-block"><%= doctor.name %></span>
                                 <div class="time-booking" id="time-patient-booking"></div>
