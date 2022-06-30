@@ -1,14 +1,14 @@
 <% extend("master.ejs") %>
 <!-- Page Heading -->
 <div class="d-sm-flex align-items-center justify-content-between mb-4">
-    <h1 class="h3 mb-0 text-gray-800">List of appointment appointments</h1>
+    <h1 class="h3 mb-0 text-gray-800">List of appointments</h1>
 
 </div>
 
 <!-- Content Row -->
 <div class="card shadow mb-4">
     <div class="card-header py-3">
-        <h6 class="m-0 font-weight-bold text-primary">List of appointment appointments</h6>
+        <h6 class="m-0 font-weight-bold text-primary">List of appointments</h6>
         <div class="my-3">
             <label for="dateDoctorAppointment">Time: </label>
             <form method="GET" action="/doctor/manage/appointment">
@@ -47,10 +47,10 @@
                             </td>
 
                             <td class="mw-100 w-25">
-                                <button title="View patient's information" type="button" data-patient-id="<%= x.id %>"
+                                <button title="View clients' information" type="button" data-patient-id="<%= x.id %>"
                                         class="btn btn-info doctor-view-detail">Detail
                                 </button>
-                                <button title="Send the bill to the patient who has completed the examination" type="button"
+                                <button title="Send the bill to the client who has experienced our service" type="button"
                                         data-patient-id="<%= x.id %>"
                                         data-is-send-forms="<%= x.isSentForms %>"
                                         class="btn btn-primary doctor-send-forms">
@@ -64,7 +64,7 @@
                                        aria-hidden="true"></i>
                                 <% } %>
                                 <i class="fa fa-trash-o" style="cursor: pointer" data-patient-id="<%= x.id %>" aria-hidden="true"
-                                   title="Cancellation of examination with the patient"></i>
+                                   title="Cancellation of scheduling with the client"></i>
                             </td>
                         </tr>
                     <% }) %>
@@ -85,10 +85,10 @@
                             </td>
 
                             <td>
-                                <button title="View patient's information" type="button" data-patient-id="<%= x.id %>"
+                                <button title="View clients' information" type="button" data-patient-id="<%= x.id %>"
                                         class="btn btn-info doctor-view-detail">Detail
                                 </button>
-                                <button title="Send the bill to the patient who has completed the examination" type="button"
+                                <button title="Send the bill to the client who has experienced our service" type="button"
                                         data-patient-id="<%= x.id %>"
                                         data-is-send-forms="<%= x.isSentForms %>"
                                         class="btn btn-primary doctor-send-forms">
@@ -102,7 +102,7 @@
                                        aria-hidden="true"></i>
                                 <% } %>
                                 <i class="fa fa-trash-o" style="cursor: pointer" data-patient-id="<%= x.id %>" aria-hidden="true"
-                                   title="Cancellation of examination with the patient"></i>
+                                   title="Cancellation of scheduling with the client"></i>
 
                             </td>
                         </tr>
@@ -124,10 +124,10 @@
                             </td>
 
                             <td>
-                                <button title="View patient's information" type="button" data-patient-id="<%= x.id %>"
+                                <button title="View clients' information" type="button" data-patient-id="<%= x.id %>"
                                         class="btn btn-info doctor-view-detail">Detail
                                 </button>
-                                <button title="Send the bill to the patient who has completed the examination" type="button"
+                                <button title="Send the bill to the client who has experienced our service" type="button"
                                         data-patient-id="<%= x.id %>"
                                         data-is-send-forms="<%= x.isSentForms %>"
                                         class="btn btn-primary doctor-send-forms">
@@ -141,7 +141,7 @@
                                        aria-hidden="true"></i>
                                 <% } %>
                                 <i class="fa fa-trash-o" style="cursor: pointer" data-patient-id="<%= x.id %>" aria-hidden="true"
-                                   title="Cancellation of examination with the patient"></i>
+                                   title="Cancellation of scheduling with the client"></i>
                             </td>
                         </tr>
                     <% }) %>
@@ -162,10 +162,10 @@
                             </td>
 
                             <td>
-                                <button title="View patient's information" type="button" data-patient-id="<%= x.id %>"
+                                <button title="View clients' information" type="button" data-patient-id="<%= x.id %>"
                                         class="btn btn-info doctor-view-detail">Detail
                                 </button>
-                                <button title="Send the bill to the patient who has completed the examination" type="button"
+                                <button title="Send the bill to the client who has experienced our service" type="button"
                                         data-patient-id="<%= x.id %>"
                                         data-is-send-forms="<%= x.isSentForms %>"
                                         class="btn btn-primary doctor-send-forms">
@@ -179,7 +179,7 @@
                                        aria-hidden="true"></i>
                                 <% } %>
                                 <i class="fa fa-trash-o" style="cursor: pointer" data-patient-id="<%= x.id %>" aria-hidden="true"
-                                   title="Cancellation of examination with the patient"></i>
+                                   title="Cancellation of scheduling with the client"></i>
 
                             </td>
                         </tr>
@@ -201,10 +201,10 @@
                             </td>
 
                             <td>
-                                <button title="View patient's information" type="button" data-patient-id="<%= x.id %>"
+                                <button title="View clients' information" type="button" data-patient-id="<%= x.id %>"
                                         class="btn btn-info doctor-view-detail">Detail
                                 </button>
-                                <button title="Send the bill to the patient who has completed the examination" type="button"
+                                <button title="Send the bill to the client who has experienced our service" type="button"
                                         data-patient-id="<%= x.id %>"
                                         data-is-send-forms="<%= x.isSentForms %>"
                                         class="btn btn-primary doctor-send-forms">
@@ -218,7 +218,7 @@
                                        aria-hidden="true"></i>
                                 <% } %>
                                 <i class="fa fa-trash-o" style="cursor: pointer" data-patient-id="<%= x.id %>" aria-hidden="true"
-                                   title="Cancellation of examination with the patient"></i>
+                                   title="Cancellation of scheduling with the client"></i>
 
                             </td>
                         </tr>
@@ -257,7 +257,7 @@
                                        aria-hidden="true"></i>
                                 <% } %>
                                 <i class="fa fa-trash-o" style="cursor: pointer" data-patient-id="<%= x.id %>" aria-hidden="true"
-                                   title="Cancellation of examination with the patient"></i>
+                                   title="Cancellation of scheduling with the client"></i>
 
                             </td>
                         </tr>
@@ -279,10 +279,10 @@
                             </td>
 
                             <td>
-                                <button title="View patient's information" type="button" data-patient-id="<%= x.id %>"
+                                <button title="View clients' information" type="button" data-patient-id="<%= x.id %>"
                                         class="btn btn-info doctor-view-detail">Detail
                                 </button>
-                                <button title="Send the bill to the patient who has completed the examination" type="button"
+                                <button title="Send the bill to the client who has experienced our service" type="button"
                                         data-patient-id="<%= x.id %>"
                                         data-is-send-forms="<%= x.isSentForms %>"
                                         class="btn btn-primary doctor-send-forms">
@@ -296,7 +296,7 @@
                                        aria-hidden="true"></i>
                                 <% } %>
                                 <i class="fa fa-trash-o" style="cursor: pointer" data-patient-id="<%= x.id %>" aria-hidden="true"
-                                   title="Cancellation of examination with the patient"></i>
+                                   title="Cancellation of scheduling with the client"></i>
 
                             </td>
                         </tr>
@@ -317,10 +317,10 @@
                                 <% } %>
                             </td>
                             <td>
-                                <button title="View patient's information" type="button" data-patient-id="<%= x.id %>"
+                                <button title="View clients' information" type="button" data-patient-id="<%= x.id %>"
                                         class="btn btn-info doctor-view-detail">Detail
                                 </button>
-                                <button title="Send the bill to the patient who has completed the examination" type="button"
+                                <button title="Send the bill to the client who has experienced our service" type="button"
                                         data-patient-id="<%= x.id %>"
                                         data-is-send-forms="<%= x.isSentForms %>"
                                         class="btn btn-primary doctor-send-forms">
@@ -334,7 +334,7 @@
                                        aria-hidden="true"></i>
                                 <% } %>
                                 <i class="fa fa-trash-o" style="cursor: pointer" data-patient-id="<%= x.id %>" aria-hidden="true"
-                                   title="Cancellation of examination with the patient"></i>
+                                   title="Cancellation of scheduling with the client"></i>
 
                             </td>
                         </tr>
@@ -352,7 +352,7 @@
     <div class="modal-dialog mw-100 w-75" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Patient information</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Client information</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -380,7 +380,7 @@
                         <input type="text" class="form-control" id="patientTime" name="patientTime" readonly>
                     </div>
                     <div class="form-group col-4">
-                        <label class="col-form-label text-label" for="patientReason">Reason:</label>
+                        <label class="col-form-label text-label" for="patientReason">Description:</label>
                         <textarea class="form-control" name="patientReason" id="patientReason"></textarea>
                     </div>
                     <div class="form-group col-4">
@@ -393,12 +393,12 @@
                     </div>
 
                     <div class="form-group col-6">
-                        <label class="col-form-label text-label" for="patientHistoryBreath">History of respiratory tract diseases:</label>
+                        <label class="col-form-label text-label" for="patientHistoryBreath">History:</label>
                         <textarea class="form-control" name="patientHistoryBreath" id="patientHistoryBreath"></textarea>
                     </div>
 
                     <div class="form-group col-6">
-                        <label class="col-form-label text-label" for="patientMoreInfo">Information on previous exams:</label>
+                        <label class="col-form-label text-label" for="patientMoreInfo">Information on previous session:</label>
                         <textarea class="form-control" name="patientMoreInfo" id="patientMoreInfo"></textarea>
                     </div>
 
@@ -407,7 +407,7 @@
                         <textarea class="form-control" name="patientNote" id="patientNote"></textarea>
                     </div>
                     <div class="col-12">
-                        <div class="col-form-label text-label">Photo of previous examination:</div>
+                        <div class="col-form-label text-label">Photo of previous session:</div>
                         <div id="imageOldForms">
 
                         </div>

@@ -85,7 +85,7 @@
 
                                             <% if( index === doctor.getDataValue('schedule').length - 1 && x.getDataValue("isDisable") === true){ %>
                                                 <div>
-                                                    There are no scheduled visits in the current timeframe. Please select the next scheduled appointments.
+                                                    There are no scheduled sessions in the current timeframe. Please select the next scheduled appointments.
                                                 </div>
                                             <% } %>
                                     <% }) %>
@@ -213,7 +213,7 @@
             <div class="modal-footer">
                 <div id="processLoading" class="process-loading d-none"> <span class="d-block mx-2"> <strong>Processing</strong></span><div class="loader"></div> </div>
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                <button type="button" class="btn btn-warning" id="btn-confirm-booking-spe">Confirm photo appointment</button>
+                <button type="button" class="btn btn-warning" id="btn-confirm-booking-spe">Confirm appointment</button>
             </div>
         </div>
     </div>

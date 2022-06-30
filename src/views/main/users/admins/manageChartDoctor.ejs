@@ -8,7 +8,7 @@
 <!-- Content Row -->
 <div class="card shadow mb-4">
     <div class="card-header py-3">
-        <h6 class="m-0 font-weight-bold text-primary">Statistics of patients examined in the month</h6>
+        <h6 class="m-0 font-weight-bold text-primary">Statistics of this month's business</h6>
     </div>
     <div class="card-body">
         <div class="">
@@ -49,15 +49,15 @@
                             text: "statistical"
                         },
                         axisY: {
-                            title: "Total number of patients",
+                            title: "Total number of clients",
                             includeZero: false
                         },
 
                         data: [ {
                             type: "column",
                             dataPoints: [
-                                { label: "New patients", y: one },
-                                { label: "The patient examined successfully", y: two },
+                                { label: "New clients", y: one },
+                                { label: "Clients served", y: two },
                                 { label: "Total invoice sent", y: three },
                             ]
                         } ]
