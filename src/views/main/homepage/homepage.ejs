@@ -7,7 +7,11 @@
                     <a class="book-button" href="/all-specializations" class="sec-fields-title d-flex flex-grow-1">
                         <span>Book Now!</span>
                     </a>
-                    <a class="login-button" href="/login" class="sec-fields-title d-flex flex-grow-1"><span>Log in</span></a>
+                    <% if(user){%>
+                        <a class="dashboard-button" href="/login" class="sec-fields-title d-flex flex-grow-1"><span>Dashboard</span></a>
+                        <%} else {%>
+                            <a class="login-button" href="/login" class="sec-fields-title d-flex flex-grow-1"><span>Log in</span></a>
+                        <% }%>
                     
                 </div>
                 <div class="homepage-logo mt-4 ml-5">

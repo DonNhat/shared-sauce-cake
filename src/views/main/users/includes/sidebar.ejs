@@ -70,7 +70,11 @@
 
         <!-- Doctors -->
         <div class="sidebar-heading">
-           Photographers
+            <% if(user){%>
+                <span>Photog.</span>
+                <%} else {%>
+                    <span>Photographers</span>
+                <% }%> 
         </div>
         <li class="nav-item " id="listAppointment">
             <a class="nav-link" href="/doctor/manage/appointment">
@@ -173,3 +177,4 @@
     </div>
 
 </ul>
+
