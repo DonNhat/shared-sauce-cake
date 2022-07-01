@@ -7,6 +7,10 @@
 #wrapper #content-wrapper {
   overflow: hidden; }
 
+/* .montserrat-font {
+  font-family: Montserrat, sans-serif;
+} */
+
 body {
   font-family: Montserrat, sans-serif; }
   body a {
@@ -32,6 +36,13 @@ body {
 .top-title {
   margin-top: -0.7%; 
 }
+.dashboard-button {
+  margin-left: 89%; 
+  margin-top: 1.2%; 
+  position:absolute;
+  border-radius: 10px;
+}
+
 .login-button {
   margin-left: 90%; 
   margin-top: 1.2%; 
