@@ -1,7 +1,7 @@
 <% extend("master.ejs") %>
 <!-- Page Heading -->
 <div class="d-sm-flex align-items-center justify-content-between mb-4">
-    <h1 class="h3 mb-0 text-gray-800">Update doctor information</h1>
+    <h1 class="h3 mb-0 text-gray-800">Update photographer information</h1>
 </div>
 
 <!-- Content Row -->
@@ -37,14 +37,14 @@
                     </select>
                 </div>
                 <div class="form-group col-6">
-                    <label for="clinicDoctor">Belong to a clinic</label>
+                    <label for="clinicDoctor">Belong to a studio</label>
                     <select id="clinicDoctor" class="form-control" name="clinicDoctor">
                         <% if(doctor.Doctor_User){ %>
                             <% clinics.forEach(function(x) { %>
                                 <option value="<%= x.id %>" <% if(x.id === doctor.Doctor_User.clinicId) {%> selected <%}%>> <%= x.name %> </option>
                             <% }) %>
                         <%}else {%>
-                                <option selected value="-1">Select the clinic</option>
+                                <option selected value="-1">Select s studio</option>
                             <% clinics.forEach(function(x) { %>
                                     <option value="<%= x.id %>" > <%= x.name %> </option>
                                 <% }) %>

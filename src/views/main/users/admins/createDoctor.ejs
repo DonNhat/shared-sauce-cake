@@ -1,7 +1,7 @@
 <% extend("master.ejs") %>
 <!-- Page Heading -->
 <div class="d-sm-flex align-items-center justify-content-between mb-4">
-    <h1 class="h3 mb-0 text-gray-800">Add new doctors</h1>
+    <h1 class="h3 mb-0 text-gray-800">Add new photographers</h1>
 </div>
 
 <!-- Content Row -->
@@ -31,9 +31,9 @@
 
             <div class="form-row">
                 <div class="form-group col-md-6">
-                    <label for="clinic">Belong to a clinic</label>
+                    <label for="clinic">Belong to a studio</label>
                     <select id="clinic" class="form-control" name="clinic">
-                        <option selected>Select the clinic</option>
+                        <option selected>Choose studio</option>
                         <% clinics.forEach(function(x) { %>
                             <option value="<%= x.id %>"> <%= x.name %> </option>
                         <% }) %>
