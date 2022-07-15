@@ -7,11 +7,12 @@ body {
   color: red; }
 
 .login {
+  background-color: #592b1a;
   display: flex;
   align-items: center;
   min-height: 100vh; }
   .login .lg-body .lg-image-background {
-    background-image: url("../images/background/header-cover.jpg");
+    background-image: url("../images/studio.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -22,6 +23,7 @@ body {
     .login .lg-body .lg-image-background:hover {
       opacity: 1; }
   .login .lg-body .text-login {
+    color: aliceblue;
     display: block;
     text-transform: uppercase;
     margin-bottom: 10px;
